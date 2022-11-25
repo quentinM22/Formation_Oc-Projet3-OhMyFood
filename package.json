@@ -1,0 +1,12 @@
+{
+  "name": "projet_3-ohmyfood",
+  "version": "1.0.0",
+  "description": "FormationOC_Projet3-QuentinMeunier",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/style.scss:./css/style.css --style expanded",
+    "sassMin": "sass --watch ./scss/style.scss:./css/style.min.css --style compressed"
+  },
+  "author": "Quentin Meunier",
+  "license": "ISC"
+}
