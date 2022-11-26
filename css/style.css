@@ -337,24 +337,19 @@ main .restaurant .rest-content .card .card-body .card-body_content .card-subtitl
 }
 header .navmenu {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-header .navmenu a img {
+header .navmenu a {
+  position: absolute;
+  top: 5%;
+  left: 4%;
+}
+header .navmenu a i {
+  color: rgb(58, 58, 58);
+}
+header .navmenu img {
   width: 20rem;
-}
-header .place {
-  display: flex;
-  justify-content: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background: #E5E5E5;
-  width: 100%;
-  color: rgb(49, 49, 49);
-}
-header .place i {
-  margin-right: 1rem;
 }
 
 main.main-content .menu {
@@ -388,6 +383,20 @@ main.main-content .menu .content .menu-card hr {
 .img-bg {
   background-attachment: fixed;
   width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  header .navmenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .navmenu a {
+    font-size: small;
+  }
+  header .navmenu img {
+    width: 14rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
