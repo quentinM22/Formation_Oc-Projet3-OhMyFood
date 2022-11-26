@@ -1,3 +1,35 @@
+header {
+    .navhome {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        a {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            img {
+                width: 20rem;
+            }
+        }
+
+    }
+
+    .place {
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        background: #E5E5E5;
+        width: 100%;
+        color: rgb(49, 49, 49);
+
+        i {
+            margin-right: 1rem;
+        }
+    }
+}
+
 main {
     .reservation {
         display: flex;
@@ -62,6 +94,7 @@ main {
 
                 &:hover {
                     background-color: rgb(255, 121, 217, 0.2);
+
                     .card_func-content {
                         i {
                             color: var(--primary);
@@ -99,8 +132,6 @@ main {
                     }
                 }
             }
-
-
         }
 
     }
@@ -186,6 +217,16 @@ main {
 
 // Phone
 @media screen and (max-width:767px) {
+    header {
+        .navhome {
+            a {
+                img {
+                    width: 14rem;
+                }
+            }
+        }
+    }
+
     main {
         .reservation {
             padding: 1rem 2rem 1rem 2rem;

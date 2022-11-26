@@ -58,6 +58,7 @@ body {
 a {
   text-decoration: none;
   color: black;
+  scroll-behavior: smooth;
 }
 
 .title {
@@ -71,29 +72,11 @@ header {
   align-items: center;
 }
 header nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
   width: 100%;
-  box-shadow: 5px 2px 5px 1px rgba(184, 184, 184, 0.8078431373);
   z-index: 1;
-}
-header nav a img {
-  width: 16rem;
-}
-header .place {
-  display: flex;
-  justify-content: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background: #E5E5E5;
-  width: 100%;
-  color: rgb(49, 49, 49);
-}
-header .place i {
-  margin-right: 1rem;
+  box-shadow: 5px 2px 5px 1px rgba(184, 184, 184, 0.8078431373);
 }
 
 footer {
@@ -136,15 +119,38 @@ footer .content ul li a span {
 }
 
 @media screen and (max-width: 767px) {
-  header nav a img {
-    width: 15rem;
-  }
   footer .content {
     padding: 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
 }
+header .navhome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .navhome a {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+header .navhome a img {
+  width: 20rem;
+}
+header .place {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: #E5E5E5;
+  width: 100%;
+  color: rgb(49, 49, 49);
+}
+header .place i {
+  margin-right: 1rem;
+}
+
 main .reservation {
   display: flex;
   flex-direction: column;
@@ -297,6 +303,9 @@ main .restaurant .rest-content .card .card-body .card-body_content .card-subtitl
 }
 
 @media screen and (max-width: 767px) {
+  header .navhome a img {
+    width: 14rem;
+  }
   main .reservation {
     padding: 1rem 2rem 1rem 2rem;
     height: auto;
@@ -325,6 +334,60 @@ main .restaurant .rest-content .card .card-body .card-body_content .card-subtitl
     margin-bottom: 2rem;
     padding: 0;
   }
+}
+header .navmenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+header .navmenu a img {
+  width: 20rem;
+}
+header .place {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: #E5E5E5;
+  width: 100%;
+  color: rgb(49, 49, 49);
+}
+header .place i {
+  margin-right: 1rem;
+}
+
+main.main-content .menu {
+  margin-top: 70vh;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+main.main-content .menu .content {
+  padding: 3rem;
+}
+main.main-content .menu .content .menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main.main-content .menu .content .menu-card {
+  padding-top: 1rem;
+}
+main.main-content .menu .content .menu-card h2 {
+  font-size: 16px;
+  font-weight: 300;
+}
+main.main-content .menu .content .menu-card hr {
+  width: 40px;
+  color: var(--tertiary);
+}
+
+.img-bg {
+  background-attachment: fixed;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
