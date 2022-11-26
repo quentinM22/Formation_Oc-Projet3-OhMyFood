@@ -8,26 +8,6 @@
   --text: "Roboto", sans-serif ;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  font-family: var(--text);
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-.title {
-  font-family: var(--title);
-}
-
 .img1 {
   background: url("../public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   background-position: center;
@@ -54,6 +34,34 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+:root {
+  --primary: rgb(147, 86, 220);
+  --secondary: rgb(255, 121, 217);
+  --tertiary: rgb(153, 226, 208);
+  --title: "Shrikhand", cursive;
+  --text: "Roboto", sans-serif ;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--text);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.title {
+  font-family: var(--title);
 }
 
 header {
@@ -88,6 +96,55 @@ header .place i {
   margin-right: 1rem;
 }
 
+footer {
+  background-color: rgb(54, 54, 54);
+}
+footer .content {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+footer .content .title a {
+  font-size: larger;
+  color: white;
+}
+footer .content .title a:hover {
+  color: var(--primary);
+  transition: 0.5s;
+}
+footer .content ul {
+  margin-top: 1rem;
+}
+footer .content ul li {
+  list-style: none;
+  line-height: 30px;
+}
+footer .content ul li a {
+  color: white;
+  font-weight: 300;
+}
+footer .content ul li a:hover {
+  color: var(--secondary);
+  border-bottom: solid 1px var(--secondary);
+  transition: 0.5s;
+}
+footer .content ul li a i {
+  margin-right: 1rem;
+}
+footer .content ul li a span {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+  header nav a img {
+    width: 15rem;
+  }
+  footer .content {
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
 main .reservation {
   display: flex;
   flex-direction: column;
@@ -144,6 +201,12 @@ main .functioning .content .card_func {
   background: #f7f7f7;
   box-shadow: 3px 3px 3px 1px rgba(184, 184, 184, 0.8078431373);
 }
+main .functioning .content .card_func:hover {
+  background-color: rgba(255, 121, 217, 0.2);
+}
+main .functioning .content .card_func:hover .card_func-content i {
+  color: var(--primary);
+}
 main .functioning .content .card_func span.target-list {
   display: flex;
   justify-content: center;
@@ -170,14 +233,9 @@ main .functioning .content .card_func .card_func-content span {
   padding-left: 1.5rem;
   font-weight: 700;
 }
-main .functioning .content .card_func:hover {
-  background-color: rgba(255, 121, 217, 0.2);
-}
-main .functioning .content .card_func:hover i {
-  color: var(--primary);
-}
 main .restaurant {
   padding-top: 2rem;
+  padding-bottom: 1rem;
   width: 100%;
   background: #f7f7f7;
 }
@@ -198,7 +256,7 @@ main .restaurant .rest-content .card {
   margin-bottom: 1rem;
   margin-right: 1rem;
   border-radius: 15px;
-  width: 260px;
+  width: 350px;
   height: 250px;
   box-shadow: 3px 3px 3px 1px rgba(184, 184, 184, 0.8078431373);
 }
@@ -237,21 +295,36 @@ main .restaurant .rest-content .card .card-body .card-body_content .card-title {
 main .restaurant .rest-content .card .card-body .card-body_content .card-subtitle {
   font-weight: 300;
 }
-main .restaurant .rest-content .card .card-body i.fa {
-  font-size: x-large;
-}
-main .restaurant .rest-content .card .card-body i.fa-hover {
-  display: none;
-}
-main .restaurant .rest-content .card .card-body i.fa:hover {
-  cursor: pointer;
-  display: none;
-  transition: 0.5s;
-}
-main .restaurant .rest-content .card .card-body i.fa:hover i.fa-hover {
-  display: block;
-  transition: 0.5s;
-  background: linear-gradient(-10deg, rgba(147, 86, 220, 0.85) 5%, rgba(255, 121, 218, 0.85));
+
+@media screen and (max-width: 767px) {
+  main .reservation {
+    padding: 1rem 2rem 1rem 2rem;
+    height: auto;
+  }
+  main .reservation button {
+    margin-top: 1rem;
+  }
+  main .functioning .content {
+    display: flex;
+    flex-flow: wrap column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  main .functioning .content .card_func {
+    width: 100%;
+  }
+  main .restaurant .rest-content {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main .restaurant .rest-content .card {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
