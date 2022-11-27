@@ -73,6 +73,10 @@ ul li {
   font-family: var(--title);
 }
 
+.subtitle {
+  font-weight: 300;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -384,10 +388,10 @@ main.main-content .menu {
   background: white;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  background: var(--light-gray);
 }
 main.main-content .menu .content {
   padding: 3rem;
-  background: var(--light-gray);
 }
 main.main-content .menu .content .menu-header {
   display: flex;
@@ -411,12 +415,49 @@ main.main-content .menu .content .menu-card ul {
   padding-top: 1rem;
 }
 main.main-content .menu .content .menu-card ul .card {
-  margin: 1rem;
-  padding: 1rem;
+  margin: 1.5rem;
+  height: 100px;
   border-radius: 25px;
   box-shadow: 5px 2px 5px 1px rgba(184, 184, 184, 0.8078431373);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row nowrap;
+  white-space: nowrap;
+  cursor: pointer;
 }
-
+main.main-content .menu .content .menu-card ul .card .card-content {
+  overflow: hidden;
+  padding-left: 1.5rem;
+}
+main.main-content .menu .content .menu-card ul .card .card-content .card-descritpion {
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content: space-between;
+}
+main.main-content .menu .content .menu-card ul .card .card-content .card-descritpion p {
+  text-overflow: ellipsis;
+}
+main.main-content .menu .content .menu-card ul .card .card-content .price {
+  font-weight: bold;
+}
+main.main-content .menu .content .menu-card ul .card .validation-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: var(--tertiary);
+  width: 60px;
+  height: 100%;
+}
+main.main-content .menu .content .menu-card ul .card .validation-card i {
+  color: var(--tertiary);
+  padding: 0.2rem;
+  font-size: larger;
+  background-color: white;
+  border-radius: 100%;
+}
 .img-bg {
   background-attachment: fixed;
   width: 100%;
@@ -445,7 +486,7 @@ main.main-content .menu .content .menu-card ul .card {
 @keyframes fadein {
   from {
     opacity: 0;
-    transform: translateY(-50px);
+    transform: translateY(-30px);
   }
   to {
     opacity: 1;
@@ -455,7 +496,7 @@ main.main-content .menu .content .menu-card ul .card {
 @-moz-keyframes fadein { /* sur Firefox */
   from {
     opacity: 0;
-    transform: translateY(-50px);
+    transform: translateY(-30px);
   }
   to {
     opacity: 1;
@@ -465,7 +506,7 @@ main.main-content .menu .content .menu-card ul .card {
 @-webkit-keyframes fadein { /* sur Safari et Chrome */
   from {
     opacity: 0;
-    transform: translateY(-50px);
+    transform: translateY(-30px);
   }
   to {
     opacity: 1;
@@ -475,7 +516,7 @@ main.main-content .menu .content .menu-card ul .card {
 @-o-keyframes fadein { /* sur Opera */
   from {
     opacity: 0;
-    transform: translateY(-50px);
+    transform: translateY(-30px);
   }
   to {
     opacity: 1;
