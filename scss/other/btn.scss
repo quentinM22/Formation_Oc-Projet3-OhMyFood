@@ -1,0 +1,78 @@
+.menu_btn{
+    height: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 15px;
+    padding-left: 5px;
+    background-color: var(--light-gray);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 5px 2px 5px 1px #b8b8b8ce;
+    transition: 600ms ease-in-out;
+    .menu_text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex: 1;
+        padding: 5px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        .menu_food{
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .menu_description{
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-weight: 300;
+        }
+    }
+    .menu_price{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        height: 90%;
+        padding-bottom: 10px;
+        font-weight: bold;
+        padding-right: 10px;
+    }
+    .menu_check{
+        height: 100%;
+        background: var(--tertiary);
+        width: 4rem;
+        margin-right: -4rem;
+        margin-left: 1rem;
+        display: flex;
+        justify-content: center;
+        visibility: hidden;
+        transition-duration: 1500ms;
+        i{
+            display: flex;
+            align-self: center;
+           font-weight: bold;
+           color: var(--tertiary);
+           padding: 0.4rem;
+           background: white;
+           border-radius: 100%;
+           font-size: larger;
+            
+        }
+        
+    }
+    &:hover{
+        .menu_check{
+            margin-right: 0rem;
+            visibility: visible;
+            i{
+                transform: rotate(-360deg);
+                transition: 1.5s;
+            }
+        }  
+    }
+}

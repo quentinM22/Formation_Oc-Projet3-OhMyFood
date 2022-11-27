@@ -6,6 +6,7 @@
   --tertiary: rgb(153, 226, 208);
   --dark-gray: #e5e5e5;
   --light-gray: #f7f7f7;
+  --dark: #454545;
   --title: "Shrikhand", cursive;
   --text: "Roboto", sans-serif ;
 }
@@ -44,6 +45,7 @@
   --tertiary: rgb(153, 226, 208);
   --dark-gray: #e5e5e5;
   --light-gray: #f7f7f7;
+  --dark: #454545;
   --title: "Shrikhand", cursive;
   --text: "Roboto", sans-serif ;
 }
@@ -372,7 +374,7 @@ header .navmenu {
 }
 header .navmenu a {
   position: absolute;
-  top: 5%;
+  top: 4%;
   left: 4%;
 }
 header .navmenu a i {
@@ -399,7 +401,7 @@ main.main-content .menu .content .menu-header {
   align-items: center;
 }
 main.main-content .menu .content .menu-card {
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 main.main-content .menu .content .menu-card h2 {
   font-size: 16px;
@@ -414,50 +416,7 @@ main.main-content .menu .content .menu-card hr {
 main.main-content .menu .content .menu-card ul {
   padding-top: 1rem;
 }
-main.main-content .menu .content .menu-card ul .card {
-  margin: 1.5rem;
-  height: 100px;
-  border-radius: 25px;
-  box-shadow: 5px 2px 5px 1px rgba(184, 184, 184, 0.8078431373);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-flow: row nowrap;
-  white-space: nowrap;
-  cursor: pointer;
-}
-main.main-content .menu .content .menu-card ul .card .card-content {
-  overflow: hidden;
-  padding-left: 1.5rem;
-}
-main.main-content .menu .content .menu-card ul .card .card-content .card-descritpion {
-  display: flex;
-  flex-flow: nowrap row;
-  justify-content: space-between;
-}
-main.main-content .menu .content .menu-card ul .card .card-content .card-descritpion p {
-  text-overflow: ellipsis;
-}
-main.main-content .menu .content .menu-card ul .card .card-content .price {
-  font-weight: bold;
-}
-main.main-content .menu .content .menu-card ul .card .validation-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-  background-color: var(--tertiary);
-  width: 60px;
-  height: 100%;
-}
-main.main-content .menu .content .menu-card ul .card .validation-card i {
-  color: var(--tertiary);
-  padding: 0.2rem;
-  font-size: larger;
-  background-color: white;
-  border-radius: 100%;
-}
+
 .img-bg {
   background-attachment: fixed;
   width: 100%;
@@ -476,6 +435,18 @@ main.main-content .menu .content .menu-card ul .card .validation-card i {
     width: 14rem;
   }
 }
+.m-d1 {
+  animation-delay: 333.33ms;
+}
+
+.m-d2 {
+  animation-delay: 666.66ms;
+}
+
+.m-d3 {
+  animation-delay: 1000s;
+}
+
 .vignets {
   animation: fadein 3s;
   -moz-animation: fadein 3s; /* Firefox */
@@ -522,6 +493,80 @@ main.main-content .menu .content .menu-card ul .card .validation-card i {
     opacity: 1;
     transform: translateY(0px);
   }
+}
+.menu_btn {
+  height: 70px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 15px;
+  padding-left: 5px;
+  background-color: var(--light-gray);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 5px 2px 5px 1px rgba(184, 184, 184, 0.8078431373);
+  transition: 600ms ease-in-out;
+}
+.menu_btn .menu_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1;
+  padding: 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu_btn .menu_text .menu_food {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu_btn .menu_text .menu_description {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 300;
+}
+.menu_btn .menu_price {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 90%;
+  padding-bottom: 10px;
+  font-weight: bold;
+  padding-right: 10px;
+}
+.menu_btn .menu_check {
+  height: 100%;
+  background: var(--tertiary);
+  width: 4rem;
+  margin-right: -4rem;
+  margin-left: 1rem;
+  display: flex;
+  justify-content: center;
+  visibility: hidden;
+  transition-duration: 1500ms;
+}
+.menu_btn .menu_check i {
+  display: flex;
+  align-self: center;
+  font-weight: bold;
+  color: var(--tertiary);
+  padding: 0.4rem;
+  background: white;
+  border-radius: 100%;
+  font-size: larger;
+}
+.menu_btn:hover .menu_check {
+  margin-right: 0rem;
+  visibility: visible;
+}
+.menu_btn:hover .menu_check i {
+  transform: rotate(-360deg);
+  transition: 1.5s;
 }
 
 /*# sourceMappingURL=style.css.map */
