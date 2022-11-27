@@ -15,7 +15,12 @@ a {
     color: black;
     scroll-behavior: smooth;
 }
+ul{
+    li{
+        list-style: none;
+} 
 
+}
 .title {
     font-family: var(--title);
 }

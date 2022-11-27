@@ -65,6 +65,10 @@ a {
   scroll-behavior: smooth;
 }
 
+ul li {
+  list-style: none;
+}
+
 .title {
   font-family: var(--title);
 }
@@ -377,13 +381,13 @@ header .navmenu img {
 main.main-content .menu {
   margin-top: 70vh;
   width: 100%;
-  height: 100vh;
   background: white;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
 main.main-content .menu .content {
   padding: 3rem;
+  background: var(--light-gray);
 }
 main.main-content .menu .content .menu-header {
   display: flex;
@@ -403,6 +407,15 @@ main.main-content .menu .content .menu-card hr {
   width: 40px;
   color: var(--tertiary);
 }
+main.main-content .menu .content .menu-card ul {
+  padding-top: 1rem;
+}
+main.main-content .menu .content .menu-card ul .card {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 25px;
+  box-shadow: 5px 2px 5px 1px rgba(184, 184, 184, 0.8078431373);
+}
 
 .img-bg {
   background-attachment: fixed;
@@ -420,6 +433,53 @@ main.main-content .menu .content .menu-card hr {
   }
   header .navmenu img {
     width: 14rem;
+  }
+}
+.vignets {
+  animation: fadein 3s;
+  -moz-animation: fadein 3s; /* Firefox */
+  -webkit-animation: fadein 3s; /* Safari et Chrome */
+  -o-animation: fadein 3s; /* Opera */
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@-moz-keyframes fadein { /* sur Firefox */
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@-o-keyframes fadein { /* sur Opera */
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
 
