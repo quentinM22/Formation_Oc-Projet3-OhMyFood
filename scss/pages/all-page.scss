@@ -34,6 +34,26 @@ header {
     }
 
 }
+//Heart 
+.icon-container {
+    font-size: larger;
+    .heart-regular {
+        background: white;
+        position: absolute;
+        transition: opacity 1000ms ease-in-out;
+
+        &:hover {
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .heart-solid {
+            background: linear-gradient(#ff79da, #9356dc);
+            background-clip: text;
+            fill: transparent;
+        }
+    }
+}
 footer{
     background-color: rgb(54, 54, 54);
     .content{

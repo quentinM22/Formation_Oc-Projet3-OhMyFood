@@ -4,6 +4,8 @@
   --primary: rgb(147, 86, 220);
   --secondary: rgb(255, 121, 217);
   --tertiary: rgb(153, 226, 208);
+  --dark-gray: #e5e5e5;
+  --light-gray: #f7f7f7;
   --title: "Shrikhand", cursive;
   --text: "Roboto", sans-serif ;
 }
@@ -40,6 +42,8 @@
   --primary: rgb(147, 86, 220);
   --secondary: rgb(255, 121, 217);
   --tertiary: rgb(153, 226, 208);
+  --dark-gray: #e5e5e5;
+  --light-gray: #f7f7f7;
   --title: "Shrikhand", cursive;
   --text: "Roboto", sans-serif ;
 }
@@ -77,6 +81,24 @@ header nav {
   width: 100%;
   z-index: 1;
   box-shadow: 5px 2px 5px 1px rgba(184, 184, 184, 0.8078431373);
+}
+
+.icon-container {
+  font-size: larger;
+}
+.icon-container .heart-regular {
+  background: white;
+  position: absolute;
+  transition: opacity 1000ms ease-in-out;
+}
+.icon-container .heart-regular:hover {
+  opacity: 0;
+  cursor: pointer;
+}
+.icon-container .heart-regular .heart-solid {
+  background: linear-gradient(#ff79da, #9356dc);
+  background-clip: text;
+  fill: transparent;
 }
 
 footer {
@@ -376,6 +398,8 @@ main.main-content .menu .content .menu-card h2 {
   font-weight: 300;
 }
 main.main-content .menu .content .menu-card hr {
+  border-top: 2px solid var(--tertiary);
+  border-radius: 5px;
   width: 40px;
   color: var(--tertiary);
 }

@@ -42,8 +42,11 @@ main.main-content {
                     font-weight: 300;
                 }
                 hr{
+                    border-top: 2px solid var(--tertiary);
+                    border-radius: 5px;
                     width: 40px;
-                    color: var(--tertiary);
+                    color:  var(--tertiary);
+                   
                 }
             }
         }
