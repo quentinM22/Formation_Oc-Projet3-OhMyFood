@@ -175,7 +175,6 @@ main .functioning .content {
 main .functioning .content .card_func {
   margin-top: 2rem;
   display: flex;
-  justify-content: baseline;
   align-items: center;
   width: 400px;
   height: 50px;

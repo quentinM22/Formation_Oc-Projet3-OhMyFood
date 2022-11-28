@@ -1,7 +1,6 @@
 header {
     .navmenu {
         display: flex;
-        // flex-direction: row;
         align-items: center;
         justify-content: center;
         a {
@@ -15,9 +14,7 @@ header {
         img {
             width: 20rem;
         }
-
     }
-
 }
 
 main.main-content {
@@ -49,9 +46,7 @@ main.main-content {
                 }
                 ul{
                     padding-top: 1rem;
-             
-                }
-               
+                }  
             }
             .btn_cmd{
                 width: 100%;
@@ -79,7 +74,6 @@ main.main-content {
                 font-size: small;  
             }
             img {
-                // padding-left: 1rem;
                 width: 14rem;
             }
         }
