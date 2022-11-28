@@ -154,7 +154,7 @@ main .reservation {
   padding-bottom: 1rem;
   line-height: 2rem;
 }
-main .reservation h1 {
+main .reservation h2 {
   font-weight: bold;
   text-align: center;
 }
@@ -221,7 +221,7 @@ main .restaurant {
   width: 100%;
   background: #f7f7f7;
 }
-main .restaurant h1 {
+main .restaurant h2 {
   padding-left: 1rem;
 }
 main .restaurant .rest-content {
@@ -386,6 +386,10 @@ main.main-content .menu .content .btn_cmd {
     width: 14rem;
   }
 }
+.img-bg {
+  background-attachment: none;
+}
+
 .loader {
   position: fixed;
   height: 100%;
@@ -504,9 +508,11 @@ main.main-content .menu .content .btn_cmd {
     transform: translateY(0px);
   }
 }
-button {
+.button {
   background: linear-gradient(-10deg, rgb(147, 86, 220) 5%, rgb(255, 121, 218));
   color: white;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   padding: 1rem;
   font-weight: 600;
   font-size: 14px;
@@ -514,7 +520,7 @@ button {
   border: none;
   box-shadow: 3px 3px 3px 1px rgba(184, 184, 184, 0.8078431373);
 }
-button:hover {
+.button:hover {
   cursor: pointer;
   background: linear-gradient(-10deg, rgba(147, 86, 220, 0.85) 5%, rgba(255, 121, 218, 0.85));
   box-shadow: 5px 5px 5px 1px rgba(128, 128, 128, 0.8078431373);
