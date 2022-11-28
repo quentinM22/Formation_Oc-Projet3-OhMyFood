@@ -22,23 +22,33 @@
     }
    
     @keyframes fadein {
-        from {
+        0% {
             opacity:0;
             transform: translateY(-30px)
             
         }
-        to {
+        90% {
+            opacity:0;
+            transform: translateY(-30px)
+            
+        }
+        100% {
             opacity:1;
             transform: translateY(0px)
         }
     }
     @-moz-keyframes fadein { /* sur Firefox */
-        from {
+        0% {
             opacity:0;
             transform: translateY(-30px)
             
         }
-        to {
+        90% {
+            opacity:0;
+            transform: translateY(-30px)
+            
+        }
+        100% {
             opacity:1;
             transform: translateY(0px)
         }
