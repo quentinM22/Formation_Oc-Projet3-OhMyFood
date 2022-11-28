@@ -13,9 +13,13 @@
 
 
     .lds-dual-ring {
-        display: inline-block;
-        width: 80px;
-        height: 80px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        .title{
+            color: $secondary;
+        }
     }
 
     .lds-dual-ring:after {

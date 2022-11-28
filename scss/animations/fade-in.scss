@@ -1,19 +1,26 @@
-    .m-d1{
-        animation-delay: 333.33ms;
-    }
-    .m-d2{
-        animation-delay: 666.66ms;
-    }
-    .m-d3{
-        animation-delay: 1000s;
-    }
-   
+
     .vignets {
-        animation: fadein 3s;
+        animation: fadein 3s ease-in-out;
         -moz-animation: fadein 3s; /* Firefox */
         -webkit-animation: fadein 3s; /* Safari et Chrome */
         -o-animation: fadein 3s; /* Opera */
     }
+    .m-d1{
+        // opacity: 0;
+        -webkit-animation-delay: 0ms;
+        animation-delay: 0ms;
+    }
+    .m-d2{
+        // opacity: 0;
+        -webkit-animation-delay: 0.5s;
+        animation-delay:0.5s;
+    }
+    .m-d3{
+        // opacity: 0;
+        -webkit-animation-delay: 1s;
+        animation-delay: 1s;
+    }
+   
     @keyframes fadein {
         from {
             opacity:0;

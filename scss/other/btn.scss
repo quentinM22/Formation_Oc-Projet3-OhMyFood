@@ -8,15 +8,16 @@ button {
     border-radius: 25px;
     border: none;
     box-shadow: 3px 3px 3px 1px #b8b8b8ce;
+
     &:hover {
         cursor: pointer;
         background: linear-gradient(-10deg, rgba(147, 86, 220, 0.85)5%, rgba(255, 121, 218, 0.85));
-        box-shadow: 5px 5px 5px 1px #b8b8b8ce;
+        box-shadow: 5px 5px 5px 1px #808080ce;
     }
 }
 
 // Bouton menu
-.menu_btn{
+.menu_btn {
     cursor: pointer;
     height: 70px;
     display: flex;
@@ -29,7 +30,8 @@ button {
     overflow: hidden;
     box-shadow: 5px 2px 5px 1px #b8b8b8ce;
     transition: 600ms ease-in-out;
-    .menu_text{
+
+    .menu_text {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -38,13 +40,15 @@ button {
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
-        .menu_food{
+
+        .menu_food {
             display: block;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
         }
-        .menu_description{
+
+        .menu_description {
             display: block;
             white-space: nowrap;
             overflow: hidden;
@@ -52,7 +56,8 @@ button {
             font-weight: 300;
         }
     }
-    .menu_price{
+
+    .menu_price {
         display: flex;
         align-items: flex-end;
         justify-content: center;
@@ -61,7 +66,8 @@ button {
         font-weight: bold;
         padding-right: 10px;
     }
-    .menu_check{
+
+    .menu_check {
         height: 100%;
         background: $tertiary;
         width: 4rem;
@@ -71,27 +77,53 @@ button {
         justify-content: center;
         visibility: hidden;
         transition-duration: 1500ms;
-        i{
+
+        i {
             display: flex;
             align-self: center;
-           font-weight: bold;
-           color: $tertiary;
-           padding: 0.4rem;
-           background: white;
-           border-radius: 100%;
-           font-size: larger;
-            
+            font-weight: bold;
+            color: $tertiary;
+            padding: 0.4rem;
+            background: white;
+            border-radius: 100%;
+            font-size: larger;
+
         }
-        
+
     }
-    &:hover{
-        .menu_check{
+
+    &:hover {
+        .menu_check {
             margin-right: 0rem;
             visibility: visible;
-            i{
+
+            i {
                 transform: rotate(-360deg);
                 transition: 1.5s;
             }
-        }  
+        }
+    }
+}
+
+// Bouton like
+.icon-container {
+    font-size: larger;
+
+    &_heart-regular {
+        background: white;
+        position: absolute;
+        transition: opacity 1000ms ease-in-out;
+
+        &:hover {
+            opacity: 0;
+            cursor: pointer;
+        }
+    }
+
+    &_heart-solid {
+        color: transparent;
+        background: linear-gradient(#ff79da, #9356dc);
+        -webkit-background-clip: text;
+        background-clip: text;
     }
 }
