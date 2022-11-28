@@ -386,6 +386,9 @@ main.main-content .menu .content .btn_cmd {
   header .navmenu img {
     width: 14rem;
   }
+  .img-bg {
+    background-attachment: scroll;
+  }
 }
 .loader {
   position: fixed;
