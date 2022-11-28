@@ -318,7 +318,7 @@ header .navmenu {
 }
 header .navmenu a {
   position: absolute;
-  top: 4%;
+  top: 3%;
   left: 4%;
 }
 header .navmenu a i {
@@ -381,13 +381,15 @@ main.main-content .menu .content .btn_cmd {
   }
   header .navmenu a {
     font-size: small;
+    top: 2.5%;
   }
   header .navmenu img {
     width: 14rem;
   }
 }
 .img-bg {
-  background-attachment: none;
+  background-attachment: scroll;
+  background-position: bottom;
 }
 
 .loader {
