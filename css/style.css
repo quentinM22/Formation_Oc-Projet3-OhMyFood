@@ -387,11 +387,6 @@ main.main-content .menu .content .btn_cmd {
     width: 14rem;
   }
 }
-.img-bg {
-  background-attachment: scroll;
-  background-position: bottom;
-}
-
 .loader {
   position: fixed;
   height: 100%;
@@ -515,10 +510,10 @@ main.main-content .menu .content .btn_cmd {
   color: white;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-  padding: 1rem;
+  padding: 0.5rem;
   font-weight: 600;
   font-size: 14px;
-  border-radius: 25px;
+  border-radius: 15px;
   border: none;
   box-shadow: 3px 3px 3px 1px rgba(184, 184, 184, 0.8078431373);
 }
