@@ -1,11 +1,30 @@
+// Bouton
+button {
+    background: linear-gradient(-10deg, rgba(147, 86, 220)5%, rgba(255, 121, 218));
+    color: white;
+    padding: 1rem;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 3px 3px 3px 1px #b8b8b8ce;
+    &:hover {
+        cursor: pointer;
+        background: linear-gradient(-10deg, rgba(147, 86, 220, 0.85)5%, rgba(255, 121, 218, 0.85));
+        box-shadow: 5px 5px 5px 1px #b8b8b8ce;
+    }
+}
+
+// Bouton menu
 .menu_btn{
+    cursor: pointer;
     height: 70px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-top: 15px;
     padding-left: 5px;
-    background-color: var(--light-gray);
+    background-color: $light-gray;
     border-radius: 18px;
     overflow: hidden;
     box-shadow: 5px 2px 5px 1px #b8b8b8ce;
@@ -44,7 +63,7 @@
     }
     .menu_check{
         height: 100%;
-        background: var(--tertiary);
+        background: $tertiary;
         width: 4rem;
         margin-right: -4rem;
         margin-left: 1rem;
@@ -56,7 +75,7 @@
             display: flex;
             align-self: center;
            font-weight: bold;
-           color: var(--tertiary);
+           color: $tertiary;
            padding: 0.4rem;
            background: white;
            border-radius: 100%;

@@ -52,23 +52,6 @@ main {
             font-weight: 200;
             text-align: center;
         }
-
-        button {
-            background: linear-gradient(-10deg, rgba(147, 86, 220)5%, rgba(255, 121, 218));
-            color: white;
-            padding: 1rem;
-            font-weight: 600;
-            font-size: 14px;
-            border-radius: 25px;
-            border: none;
-            box-shadow: 3px 3px 3px 1px #b8b8b8ce;
-
-            &:hover {
-                cursor: pointer;
-                background: linear-gradient(-10deg, rgba(147, 86, 220, 0.85)5%, rgba(255, 121, 218, 0.85));
-                box-shadow: 5px 5px 5px 1px #b8b8b8ce;
-            }
-        }
     }
 
     .functioning {
@@ -98,7 +81,7 @@ main {
 
                     .card_func-content {
                         i {
-                            color: var(--primary);
+                            color: $primary;
                         }
                     }
                 }
@@ -108,7 +91,7 @@ main {
                     justify-content: center;
                     align-items: center;
                     position: absolute;
-                    background: var(--primary);
+                    background: $primary;
                     width: 30px;
                     height: 30px;
                     margin-left: -1rem;
@@ -184,7 +167,7 @@ main {
                             border-radius: 2px;
                             font-weight: 400;
                             color: green;
-                            background: var(--tertiary);
+                            background: $tertiary;
                         }
                     }
 

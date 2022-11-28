@@ -7,7 +7,7 @@
 body {
     display: flex;
     flex-direction: column;
-    font-family: var(--text);
+    font-family: $text;
 }
 
 a {
@@ -22,7 +22,7 @@ ul{
 
 }
 .title {
-    font-family: var(--title);
+    font-family: $title;
 }
 .subtitle{
     font-weight: 300;
@@ -73,7 +73,7 @@ footer{
           font-size:larger;  
           color: white;
           &:hover{
-            color: var(--primary);
+            color: $primary;
             transition: 0.5s;
           }
         }
@@ -87,8 +87,8 @@ footer{
                     color: white;
                     font-weight: 300;
                      &:hover{
-                        color: var(--secondary);
-                        border-bottom: solid 1px var(--secondary);
+                        color: $secondary;
+                        border-bottom: solid 1px $secondary;
                         transition: 0.5s;
                       
                       }

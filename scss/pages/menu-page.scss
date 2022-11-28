@@ -27,10 +27,9 @@ main.main-content {
         background: white;
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
-        background: var(--light-gray);
+        background: $light-gray;
         .content{
             padding: 3rem;
-            
             .menu-header{
                 display: flex;
                 justify-content: space-between;
@@ -43,16 +42,23 @@ main.main-content {
                     font-weight: 300;
                 }
                 hr{
-                    border-top: 2px solid var(--tertiary);
+                    border-top: 2px solid $tertiary;
                     border-radius: 5px;
                     width: 40px;
-                    color:  var(--tertiary);
+                    color:  $tertiary;
                 }
                 ul{
                     padding-top: 1rem;
              
                 }
                
+            }
+            .btn_cmd{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 2rem;
             }
         }
     }
