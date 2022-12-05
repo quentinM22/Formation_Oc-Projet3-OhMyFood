@@ -29,6 +29,14 @@ ul li {
   font-weight: 300;
 }
 
+.dark-shadow {
+  text-shadow: #e5e5e5 2px 3px;
+}
+
+.light-shadow {
+  text-shadow: rgb(34, 32, 32) 2px 1px;
+}
+
 header {
   display: flex;
   flex-direction: column;
