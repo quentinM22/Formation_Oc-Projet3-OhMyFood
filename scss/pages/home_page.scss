@@ -1,33 +1,14 @@
-header {
-    .navhome {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+.place {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: #E5E5E5;
+    width: 100%;
+    color: rgb(49, 49, 49);
 
-        a {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-
-            img {
-                width: 20rem;
-            }
-        }
-
-    }
-
-    .place {
-        display: flex;
-        justify-content: center;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        background: #E5E5E5;
-        width: 100%;
-        color: rgb(49, 49, 49);
-
-        i {
-            margin-right: 1rem;
-        }
+    i {
+        margin-right: 1rem;
     }
 }
 
@@ -68,7 +49,7 @@ main {
                 margin-top: 2rem;
                 display: flex;
                 align-items: center;
-                width: 400px;
+                width: 25%;
                 height: 50px;
                 border-radius: 20px;
                 padding: 0.5rem;
@@ -143,11 +124,10 @@ main {
                 margin-bottom: 1rem;
                 margin-right: 1rem;
                 border-radius: 15px;
-                width: 350px;
+                width: 33%;
                 height: 250px;
                 box-shadow: 3px 3px 3px 1px #b8b8b8ce;
 
-                // border: solid 1px red;
                 .card-header {
                     width: 100%;
 
@@ -158,9 +138,9 @@ main {
                         border-top-right-radius: 15px;
 
                         span {
-                            position: relative;
-                            left: 70%;
-                            top: 10%;
+                            float: right;
+                            margin-top: 10px;
+                            margin-right: 10px;
                             padding: 5px 10px;
                             font-size: 14px;
                             border-radius: 2px;
@@ -179,18 +159,25 @@ main {
                     padding: 1rem;
 
                     .card-body_content {
+                        width: 95%;
                         line-height: 22px;
 
                         .card-title {
+
                             font-weight: 700;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+
                         }
 
                         .card-subtitle {
                             font-weight: 300;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
                         }
                     }
-
-                    
                 }
             }
         }
@@ -200,16 +187,6 @@ main {
 
 // Phone
 @media screen and (max-width:767px) {
-    header {
-        .navhome {
-            a {
-                img {
-                    width: 14rem;
-                }
-            }
-        }
-    }
-
     main {
         .reservation {
             padding: 1rem 2rem 1rem 2rem;

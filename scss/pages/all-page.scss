@@ -1,4 +1,3 @@
-@import "../variables.scss";
 * {
     margin: 0;
     padding: 0;
@@ -15,16 +14,19 @@ a {
     color: black;
     scroll-behavior: smooth;
 }
-ul{
-    li{
+
+ul {
+    li {
         list-style: none;
-} 
+    }
 
 }
+
 .title {
     font-family: $title;
 }
-.subtitle{
+
+.subtitle {
     font-weight: 300;
 }
 
@@ -33,62 +35,102 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    nav{
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+    max-width: 100%;
+
+    nav {
+
+        display: flex;
+        align-items: center;
         width: 100%;
         z-index: 1;
-        box-shadow: 5px 2px 5px 1px #b8b8b8ce;
+        min-height: 5rem;
+        box-shadow: 5px 2px 5px 1px #9b9b9bce;
+
+        a {
+            padding-left: 1rem;
+            padding-right: 0.5rem;
+            position: absolute;
+
+            i {
+                font-size: xx-large;
+                color: rgb(58, 58, 58);
+            }
+        }
+
+        img {
+            margin: auto;
+            padding: 0.5rem;
+            width: 200px;
+        }
     }
 
 }
-//Heart 
 
-footer{
+footer {
     background-color: rgb(54, 54, 54);
-    .content{
+
+    .content {
         display: flex;
         flex-direction: column;
         padding: 2rem;
-       .title{
-        a{
-          font-size:larger;  
-          color: white;
-          &:hover{
-            color: $primary;
-            transition: 0.5s;
-          }
+
+        .title {
+            a {
+                font-size: larger;
+                color: white;
+
+                &:hover {
+                    color: $primary;
+                    transition: 0.5s;
+                }
+            }
         }
-       }
-        ul{
+
+        ul {
             margin-top: 1rem;
-            li{
+
+            li {
                 list-style: none;
                 line-height: 30px;
-                a{
+
+                a {
                     color: white;
                     font-weight: 300;
-                     &:hover{
+
+                    &:hover {
                         color: $secondary;
                         border-bottom: solid 1px $secondary;
                         transition: 0.5s;
-                      }
-                    i{
+                    }
+
+                    i {
                         margin-right: 1rem;
                     }
-                    span{
+
+                    span {
                         font-weight: 500;
                     }
                 }
-                
+
             }
         }
     }
 }
 
 @media screen and (max-width:767px) {
-    footer{
-        .content{
+
+    header {
+        nav {
+            a {
+                i {
+                    font-size: x-large;
+                }
+            }
+        }
+    }
+
+    footer {
+        .content {
             padding: 1rem;
             margin-top: 1rem;
             margin-bottom: 1rem;

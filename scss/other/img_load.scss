@@ -25,3 +25,18 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@media screen and (max-width:767px) {
+    .img-bg.img1{
+        background-position: bottom;
+    }
+    .img-bg.img2{
+        background-position: bottom;
+    }
+    .img-bg.img3{
+        background-position: bottom;
+    }
+    .img-bg.img4{
+        background-position: bottom;
+    }
+}
