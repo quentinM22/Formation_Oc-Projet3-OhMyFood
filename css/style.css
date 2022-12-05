@@ -1,40 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
-.img1 {
-  background: url("../public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.img2 {
-  background: url("../public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.img3 {
-  background: url("../public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.img4 {
-  background: url("../public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.img-bg {
-  max-width: 100%;
-  max-height: 33rem;
-  object-fit: cover;
-  width: 100%;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -85,7 +50,7 @@ header nav a {
   position: absolute;
 }
 header nav a i {
-  font-size: xx-large;
+  font-size: x-large;
   color: rgb(58, 58, 58);
 }
 header nav img {
@@ -133,14 +98,9 @@ footer .content ul li a span {
   font-weight: 500;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1024px) {
   header nav a i {
     font-size: x-large;
-  }
-  footer .content {
-    padding: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
   }
 }
 .place {
@@ -153,7 +113,7 @@ footer .content ul li a span {
   color: rgb(49, 49, 49);
 }
 .place i {
-  margin-right: 1rem;
+  margin-right: 1.5rem;
 }
 
 main .reservation {
@@ -162,7 +122,7 @@ main .reservation {
   align-items: center;
   justify-content: space-evenly;
   background: #f7f7f7;
-  height: 30vh;
+  height: 40vh;
   padding-top: 1rem;
   padding-bottom: 1rem;
   line-height: 2rem;
@@ -181,52 +141,14 @@ main .functioning {
 }
 main .functioning .content {
   display: flex;
+  flex-flow: wrap column;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 main .functioning .content .card_func {
-  margin-top: 2rem;
-  display: flex;
-  align-items: center;
-  width: 25%;
-  height: 50px;
-  border-radius: 20px;
-  padding: 0.5rem;
-  background: #f7f7f7;
-  box-shadow: 3px 3px 3px 1px rgba(184, 184, 184, 0.8078431373);
-}
-main .functioning .content .card_func:hover {
-  background-color: rgba(255, 121, 217, 0.2);
-}
-main .functioning .content .card_func:hover .card_func-content i {
-  color: rgb(147, 86, 220);
-}
-main .functioning .content .card_func span.target-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  background: rgb(147, 86, 220);
-  width: 30px;
-  height: 30px;
-  margin-left: -1rem;
-  color: white;
-  border-radius: 100%;
-}
-main .functioning .content .card_func .card_func-content {
-  display: flex;
   width: 100%;
-  padding-left: 2rem;
-}
-main .functioning .content .card_func .card_func-content i {
-  display: flex;
-  align-self: center;
-  color: rgb(87, 87, 87);
-}
-main .functioning .content .card_func .card_func-content span {
-  padding-left: 1.5rem;
-  font-weight: 700;
 }
 main .restaurant {
   padding-top: 2rem;
@@ -239,93 +161,36 @@ main .restaurant h2 {
 }
 main .restaurant .rest-content {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 1rem;
 }
 main .restaurant .rest-content .card {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1rem;
-  margin-right: 1rem;
-  border-radius: 15px;
-  width: 33%;
-  height: 250px;
-  box-shadow: 3px 3px 3px 1px rgba(184, 184, 184, 0.8078431373);
-}
-main .restaurant .rest-content .card .card-header {
   width: 100%;
-}
-main .restaurant .rest-content .card .card-header .img {
-  width: 100%;
-  height: 180px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-main .restaurant .rest-content .card .card-header .img span {
-  float: right;
-  margin-top: 10px;
-  margin-right: 10px;
-  padding: 5px 10px;
-  font-size: 14px;
-  border-radius: 2px;
-  font-weight: 400;
-  color: green;
-  background: rgb(153, 226, 208);
-}
-main .restaurant .rest-content .card .card-body {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-}
-main .restaurant .rest-content .card .card-body .card-body_content {
-  width: 95%;
-  line-height: 22px;
-}
-main .restaurant .rest-content .card .card-body .card-body_content .card-title {
-  font-weight: 700;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-main .restaurant .rest-content .card .card-body .card-body_content .card-subtitle {
-  font-weight: 300;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
-@media screen and (max-width: 767px) {
-  main .reservation {
-    padding: 1rem 2rem 1rem 2rem;
-    height: auto;
-  }
-  main .reservation button {
-    margin-top: 1rem;
-  }
+@media screen and (min-width: 768px) {
   main .functioning .content {
     display: flex;
-    flex-flow: wrap column;
+    flex-direction: row;
+    max-width: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
   }
   main .functioning .content .card_func {
-    width: 100%;
+    width: 25%;
   }
   main .restaurant .rest-content {
     margin-top: 1rem;
     margin-bottom: 1rem;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-flow: wrap row;
+    justify-content: space-evenly;
   }
   main .restaurant .rest-content .card {
-    width: 100%;
-    margin-bottom: 2rem;
-    padding: 0;
+    width: 33%;
   }
 }
 main.main-content .menu {
@@ -368,6 +233,12 @@ main.main-content .menu .content .btn_cmd {
   margin-top: 2rem;
 }
 
+@media screen and (min-width: 1024px) {
+  .menu {
+    display: flex;
+    justify-content: center;
+  }
+}
 .loader {
   position: fixed;
   height: 100%;
@@ -486,6 +357,41 @@ main.main-content .menu .content .btn_cmd {
     transform: translateY(0px);
   }
 }
+.img1 {
+  background: url("../public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img2 {
+  background: url("../public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img3 {
+  background: url("../public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img4 {
+  background: url("../public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-bg {
+  max-width: 100%;
+  max-height: 33rem;
+  object-fit: cover;
+  width: 100%;
+}
+
 .button {
   background: linear-gradient(-10deg, rgb(147, 86, 220) 5%, rgb(255, 121, 218));
   color: white;
@@ -495,7 +401,7 @@ main.main-content .menu .content .btn_cmd {
   margin-bottom: 0.5rem;
   padding: 0.5rem;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   border-radius: 15px;
   border: none;
   box-shadow: 3px 3px 3px 1px rgba(184, 184, 184, 0.8078431373);
@@ -599,6 +505,104 @@ main.main-content .menu .content .btn_cmd {
   background: linear-gradient(#ff79da, #9356dc);
   -webkit-background-clip: text;
   background-clip: text;
+}
+
+.card_func {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  width: 25%;
+  height: 50px;
+  border-radius: 20px;
+  padding: 0.5rem;
+  background: #f7f7f7;
+  box-shadow: 3px 3px 3px 1px rgba(184, 184, 184, 0.8078431373);
+}
+.card_func:hover {
+  cursor: pointer;
+  background-color: rgba(255, 121, 217, 0.2);
+}
+.card_func:hover .card_func-content i {
+  color: rgb(147, 86, 220);
+}
+.card_func span.target-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: rgb(147, 86, 220);
+  width: 30px;
+  height: 30px;
+  margin-left: -1rem;
+  color: white;
+  border-radius: 100%;
+}
+.card_func .card_func-content {
+  display: flex;
+  width: 100%;
+  padding-left: 2rem;
+}
+.card_func .card_func-content i {
+  display: flex;
+  align-self: center;
+  color: rgb(87, 87, 87);
+}
+.card_func .card_func-content span {
+  padding-left: 1.5rem;
+  font-weight: 700;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  border-radius: 15px;
+  width: 100%;
+  height: 250px;
+  box-shadow: 3px 3px 3px 1px rgba(184, 184, 184, 0.8078431373);
+}
+.card .card-header {
+  width: 100%;
+}
+.card .card-header .img {
+  width: 100%;
+  height: 180px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.card .card-header .img span {
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 2px;
+  font-weight: 400;
+  color: green;
+  background: rgb(153, 226, 208);
+}
+.card .card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.card .card-body .card-body_content {
+  width: 95%;
+  line-height: 22px;
+}
+.card .card-body .card-body_content .card-title {
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.card .card-body .card-body_content .card-subtitle {
+  font-weight: 300;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

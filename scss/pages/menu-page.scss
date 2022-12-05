@@ -40,6 +40,13 @@ main.main-content {
     }
 }
 
+@media screen and (min-width:1024px) {
+    .menu{
+        display: flex;
+        justify-content: center;
+    }
+}
+
 
 
 

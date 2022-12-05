@@ -8,7 +8,7 @@
     color: rgb(49, 49, 49);
 
     i {
-        margin-right: 1rem;
+        margin-right: 1.5rem;
     }
 }
 
@@ -19,7 +19,7 @@ main {
         align-items: center;
         justify-content: space-evenly;
         background: #f7f7f7;
-        height: 30vh;
+        height: 40vh;
         padding-top: 1rem;
         padding-bottom: 1rem;
         line-height: 2rem;
@@ -41,60 +41,14 @@ main {
 
         .content {
             display: flex;
+            flex-flow: wrap column;
             justify-content: space-around;
             align-items: center;
-            flex-wrap: wrap;
+            padding-left: 1rem;
+            padding-right: 1rem;
 
             .card_func {
-                margin-top: 2rem;
-                display: flex;
-                align-items: center;
-                width: 25%;
-                height: 50px;
-                border-radius: 20px;
-                padding: 0.5rem;
-                background: #f7f7f7;
-                box-shadow: 3px 3px 3px 1px #b8b8b8ce;
-
-                &:hover {
-                    background-color: rgb(255, 121, 217, 0.2);
-
-                    .card_func-content {
-                        i {
-                            color: $primary;
-                        }
-                    }
-                }
-
-                span.target-list {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    position: absolute;
-                    background: $primary;
-                    width: 30px;
-                    height: 30px;
-                    margin-left: -1rem;
-                    color: white;
-                    border-radius: 100%;
-                }
-
-                .card_func-content {
-                    display: flex;
-                    width: 100%;
-                    padding-left: 2rem;
-
-                    i {
-                        display: flex;
-                        align-self: center;
-                        color: rgb(87, 87, 87);
-                    }
-
-                    span {
-                        padding-left: 1.5rem;
-                        font-weight: 700;
-                    }
-                }
+                width: 100%;
             }
         }
 
@@ -112,116 +66,50 @@ main {
 
         .rest-content {
             display: flex;
-            flex-flow: row wrap;
-            justify-content: space-evenly;
+            // display: flex;
+            flex-direction: column;
+            justify-content: center;
+            // flex-flow: row wrap;
+            // justify-content: space-evenly;
             padding-left: 1rem;
             padding-right: 1rem;
             padding-top: 1rem;
 
             .card {
-                display: flex;
-                flex-direction: column;
-                margin-bottom: 1rem;
-                margin-right: 1rem;
-                border-radius: 15px;
-                width: 33%;
-                height: 250px;
-                box-shadow: 3px 3px 3px 1px #b8b8b8ce;
-
-                .card-header {
-                    width: 100%;
-
-                    .img {
-                        width: 100%;
-                        height: 180px;
-                        border-top-left-radius: 15px;
-                        border-top-right-radius: 15px;
-
-                        span {
-                            float: right;
-                            margin-top: 10px;
-                            margin-right: 10px;
-                            padding: 5px 10px;
-                            font-size: 14px;
-                            border-radius: 2px;
-                            font-weight: 400;
-                            color: green;
-                            background: $tertiary;
-                        }
-                    }
-
-                }
-
-                .card-body {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    padding: 1rem;
-
-                    .card-body_content {
-                        width: 95%;
-                        line-height: 22px;
-
-                        .card-title {
-
-                            font-weight: 700;
-                            text-overflow: ellipsis;
-                            white-space: nowrap;
-                            overflow: hidden;
-
-                        }
-
-                        .card-subtitle {
-                            font-weight: 300;
-                            text-overflow: ellipsis;
-                            white-space: nowrap;
-                            overflow: hidden;
-                        }
-                    }
-                }
+                width: 100%;
+            
             }
+
         }
     }
 }
 
 
-// Phone
-@media screen and (max-width:767px) {
+// Tab et grand écran
+@media screen and (min-width:768px) {
     main {
-        .reservation {
-            padding: 1rem 2rem 1rem 2rem;
-            height: auto;
-
-            button {
-                margin-top: 1rem;
-            }
-        }
-
         .functioning {
             .content {
                 display: flex;
-                flex-flow: wrap column;
+                flex-direction: row;
+                max-width: 100%;
                 padding-left: 1rem;
                 padding-right: 1rem;
-
                 .card_func {
-                    width: 100%;
+                    width: 25%;
                 }
             }
         }
-
         .restaurant {
             .rest-content {
                 margin-top: 1rem;
                 margin-bottom: 1rem;
                 display: flex;
-                flex-direction: column;
-                justify-content: center;
+                flex-flow:wrap row;
+                justify-content: space-evenly;
 
                 .card {
-                    width: 100%;
-                    margin-bottom: 2rem;
-                    padding: 0;
+                    width: 33%;
                 }
             }
         }

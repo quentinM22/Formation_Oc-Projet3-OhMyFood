@@ -3,7 +3,6 @@
 
 @import "./variables.scss";
 
-@import "./other/img_load.scss";
 @import "./pages/all-page.scss";
 
 @import "./pages/home_page.scss";
@@ -12,5 +11,6 @@
 @import "./animations/loader.scss";
 @import "./animations/fade-in.scss";
 
-
+@import "./other/img_load.scss";
 @import "./other/btn.scss";
+@import "./other/card.scss";

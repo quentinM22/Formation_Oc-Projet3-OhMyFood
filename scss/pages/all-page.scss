@@ -52,7 +52,7 @@ header {
             position: absolute;
 
             i {
-                font-size: xx-large;
+                font-size: x-large;
                 color: rgb(58, 58, 58);
             }
         }
@@ -117,7 +117,7 @@ footer {
     }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (min-width:1024px) {
 
     header {
         nav {
@@ -126,14 +126,6 @@ footer {
                     font-size: x-large;
                 }
             }
-        }
-    }
-
-    footer {
-        .content {
-            padding: 1rem;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
         }
     }
 }
