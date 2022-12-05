@@ -27,16 +27,20 @@
 }
 
 @media screen and (max-width:767px) {
-    .img-bg.img1{
-        background-position: bottom;
+    .img-bg{
+        background-attachment:local;
+        .img1{
+            background-position: bottom;
+        }
+        .img2{
+            background-position: bottom;
+        }
+        .img3{
+            background-position: bottom;
+        }
+        .img4{
+            background-position: bottom;
+        }
     }
-    .img-bg.img2{
-        background-position: bottom;
-    }
-    .img-bg.img3{
-        background-position: bottom;
-    }
-    .img-bg.img4{
-        background-position: bottom;
-    }
+    
 }
