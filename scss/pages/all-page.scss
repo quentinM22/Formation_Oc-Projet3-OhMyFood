@@ -19,12 +19,9 @@ ul {
     li {
         list-style: none;
     }
-
 }
-
 .title {
-    font-family: $title;
-    
+    font-family: $title; 
 }
 
 .subtitle {
@@ -56,10 +53,16 @@ header {
             padding-left: 1rem;
             padding-right: 0.5rem;
             position: absolute;
+            &:hover{
+                i{
+                  color: $primary;  
+                }
+                
+            }
 
             i {
                 font-size: x-large;
-                color: rgb(58, 58, 58);
+                color: $dark;
             }
         }
 

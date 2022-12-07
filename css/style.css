@@ -57,9 +57,12 @@ header nav a {
   padding-right: 0.5rem;
   position: absolute;
 }
+header nav a:hover i {
+  color: rgb(147, 86, 220);
+}
 header nav a i {
   font-size: x-large;
-  color: rgb(58, 58, 58);
+  color: #454545;
 }
 header nav img {
   margin: auto;
@@ -122,6 +125,11 @@ footer .content ul li a span {
 }
 .place i {
   margin-right: 1.5rem;
+}
+.place:hover {
+  background: #f7f7f7;
+  color: rgb(147, 86, 220);
+  cursor: text;
 }
 
 main .reservation {
@@ -569,6 +577,14 @@ main.main-content .menu .content .btn_cmd {
   width: 100%;
   height: 250px;
   box-shadow: 3px 3px 3px 1px rgba(184, 184, 184, 0.8078431373);
+}
+.card:hover {
+  transform: scale(1.02);
+  transition: 0.5s;
+  box-shadow: 3px 3px 3px 1px rgba(56, 56, 56, 0.8078431373);
+}
+.card:hover .img {
+  filter: blur(1px);
 }
 .card .card-header {
   width: 100%;
