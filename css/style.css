@@ -127,7 +127,6 @@ footer .content ul li a span {
   margin-right: 1.5rem;
 }
 .place:hover {
-  background: #f7f7f7;
   color: rgb(147, 86, 220);
   cursor: text;
 }
