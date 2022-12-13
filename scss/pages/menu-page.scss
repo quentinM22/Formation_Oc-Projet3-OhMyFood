@@ -42,9 +42,32 @@ main.main-content {
 
 @media screen and (min-width:1024px) {
     .menu{
-        display: flex;
-        justify-content: center;
+        
+        width: 100%;
+        // justify-content: center;
+        .content{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+            .menu-header{
+                width: 100%;
+            }
+            .menu-card{
+                width: calc(33.33% - 20px);
+            }
+        }
     }
+    // .menu_btn{
+    //     .menu_text{
+    //         flex-flow: row wrap ;
+    //         overflow: hidden;
+    //         padding-right: 10px;
+    //     }
+    //     .menu_price{
+    //         margin-left: 15px;
+    //     }
+    // }
 }
 
 

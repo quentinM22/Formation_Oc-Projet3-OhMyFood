@@ -53,8 +53,7 @@ header nav {
   box-shadow: 5px 2px 5px 1px rgba(155, 155, 155, 0.8078431373);
 }
 header nav a {
-  padding-left: 1rem;
-  padding-right: 0.5rem;
+  padding: 1rem;
   position: absolute;
 }
 header nav a:hover i {
@@ -102,11 +101,16 @@ footer .content ul li a:hover {
   border-bottom: solid 1px rgb(255, 121, 217);
   transition: 0.5s;
 }
-footer .content ul li a i {
-  margin-right: 1rem;
-}
 footer .content ul li a span {
   font-weight: 500;
+}
+footer .content ul li a span.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -123,10 +127,14 @@ footer .content ul li a span {
   width: 100%;
   color: rgb(49, 49, 49);
 }
-.place i {
-  margin-right: 1.5rem;
+.place span {
+  position: relative;
 }
-.place:hover {
+.place span i {
+  position: absolute;
+  margin-left: -25px;
+}
+.place span:hover {
   color: rgb(147, 86, 220);
   cursor: text;
 }
@@ -250,8 +258,19 @@ main.main-content .menu .content .btn_cmd {
 
 @media screen and (min-width: 1024px) {
   .menu {
+    width: 100%;
+  }
+  .menu .content {
     display: flex;
-    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu .content .menu-header {
+    width: 100%;
+  }
+  .menu .content .menu-card {
+    width: calc(33.33% - 20px);
   }
 }
 .loader {
@@ -263,7 +282,7 @@ main.main-content .menu .content .btn_cmd {
   align-items: center;
   background: #454545;
   z-index: 5;
-  animation: loader 4000ms cubic-bezier(0.6, 0.01, 1, 0.47);
+  animation: loader 2500ms cubic-bezier(0.6, 0.01, 1, 0.47);
   animation-fill-mode: none;
   animation-fill-mode: both;
 }

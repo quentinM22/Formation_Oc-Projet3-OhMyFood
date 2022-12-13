@@ -50,9 +50,9 @@ header {
         box-shadow: 5px 2px 5px 1px #9b9b9bce;
 
         a {
-            padding-left: 1rem;
-            padding-right: 0.5rem;
+            padding: 1rem;
             position: absolute;
+        
             &:hover{
                 i{
                   color: $primary;  
@@ -112,12 +112,18 @@ footer {
                         transition: 0.5s;
                     }
 
-                    i {
-                        margin-right: 1rem;
-                    }
+                    
 
                     span {
                         font-weight: 500;
+                    }
+                    span.icon{
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 0.5rem;
                     }
                 }
 
