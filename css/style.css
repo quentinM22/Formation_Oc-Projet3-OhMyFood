@@ -225,7 +225,7 @@ main.main-content .menu {
   background: #f7f7f7;
 }
 main.main-content .menu .content {
-  padding: 3rem;
+  padding: 1.5rem;
 }
 main.main-content .menu .content .menu-header {
   display: flex;
@@ -322,10 +322,10 @@ main.main-content .menu .content .btn_cmd {
   }
 }
 .vignets {
-  animation: fadein 3s ease-in-out;
-  -moz-animation: fadein 3s; /* Firefox */
-  -webkit-animation: fadein 3s; /* Safari et Chrome */
-  -o-animation: fadein 3s; /* Opera */
+  animation: fadein 0.5s ease-in-out;
+  -moz-animation: fadein 0.5s; /* Firefox */
+  -webkit-animation: fadein 0.5s; /* Safari et Chrome */
+  -o-animation: fadein 0.5s; /* Opera */
 }
 
 .m-d1 {
@@ -391,6 +391,81 @@ main.main-content .menu .content .btn_cmd {
     transform: translateY(0px);
   }
 }
+.menu_btn {
+  animation: btnfadein 1.5s ease-in;
+  -moz-animation: btnfadein 1.5s; /* Firefox */
+  -webkit-animation: btnfadein 1.5s; /* Safari et Chrome */
+  -o-animation: btnfadein 1.5s; /* Opera */
+}
+
+.m-b1 {
+  -webkit-animation-delay: 0.5ms;
+  animation-delay: 0.5ms;
+}
+
+.m-b2 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.m-b3 {
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+.m-b4 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+@keyframes btnfadein {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  90% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@-moz-keyframes btnfadein { /* sur Firefox */
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  90% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@-webkit-keyframes btnfadein { /* sur Safari et Chrome */
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@-o-keyframes btnfadein { /* sur Opera */
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 .img1 {
   background: url("../public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   background-position: center;
@@ -427,6 +502,9 @@ main.main-content .menu .content .btn_cmd {
 }
 
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(-10deg, rgb(147, 86, 220) 5%, rgb(255, 121, 218));
   color: white;
   text-align: center;
@@ -438,6 +516,7 @@ main.main-content .menu .content .btn_cmd {
   font-size: 16px;
   border-radius: 15px;
   border: none;
+  height: 25px;
   box-shadow: 3px 3px 3px 1px rgba(184, 184, 184, 0.8078431373);
 }
 .button:hover {
@@ -470,6 +549,9 @@ main.main-content .menu .content .btn_cmd {
   text-overflow: ellipsis;
   overflow: hidden;
 }
+.menu_btn .menu_text h3 {
+  font-size: 16px;
+}
 .menu_btn .menu_text .menu_food {
   display: block;
   white-space: nowrap;
@@ -477,6 +559,7 @@ main.main-content .menu .content .btn_cmd {
   text-overflow: ellipsis;
 }
 .menu_btn .menu_text .menu_description {
+  font-size: 14px;
   display: block;
   white-space: nowrap;
   overflow: hidden;
@@ -635,12 +718,14 @@ main.main-content .menu .content .btn_cmd {
   line-height: 22px;
 }
 .card .card-body .card-body_content .card-title {
+  font-size: 16px;
   font-weight: 700;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 .card .card-body .card-body_content .card-subtitle {
+  font-size: 14px;
   font-weight: 300;
   text-overflow: ellipsis;
   white-space: nowrap;

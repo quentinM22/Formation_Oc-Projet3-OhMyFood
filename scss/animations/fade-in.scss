@@ -1,9 +1,9 @@
 
     .vignets {
-        animation: fadein 3s ease-in-out;
-        -moz-animation: fadein 3s; /* Firefox */
-        -webkit-animation: fadein 3s; /* Safari et Chrome */
-        -o-animation: fadein 3s; /* Opera */
+        animation: fadein 0.5s ease-in-out;
+        -moz-animation: fadein 0.5s; /* Firefox */
+        -webkit-animation: fadein 0.5s; /* Safari et Chrome */
+        -o-animation: fadein 0.5s; /* Opera */
     }
     .m-d1{
         // opacity: 0;
@@ -76,3 +76,84 @@
         }
     }
 
+
+    .menu_btn{
+        animation: btnfadein 1.5s ease-in;
+        -moz-animation: btnfadein 1.5s; /* Firefox */
+        -webkit-animation: btnfadein 1.5s; /* Safari et Chrome */
+        -o-animation: btnfadein 1.5s; /* Opera */
+    }
+    .m-b1{
+        // opacity: 0;
+        -webkit-animation-delay: 0.5ms;
+        animation-delay: 0.5ms;
+    }
+    .m-b2{
+        // opacity: 0;
+        -webkit-animation-delay: 1s;
+        animation-delay:1s;
+    }
+    .m-b3{
+        // opacity: 0;
+        -webkit-animation-delay: 1.5s;
+        animation-delay: 1.5s;
+    }
+    .m-b4{
+        // opacity: 0;
+        -webkit-animation-delay: 2s;
+        animation-delay: 2s;
+    }
+    @keyframes btnfadein {
+        0% {
+            opacity:0;
+            transform: translateY(-30px)
+            
+        }
+        90% {
+            opacity:0;
+            transform: translateY(-30px)
+            
+        }
+        100% {
+            opacity:1;
+            transform: translateY(0px)
+        }
+    }
+    @-moz-keyframes btnfadein { /* sur Firefox */
+        0% {
+            opacity:0;
+            transform: translateY(-30px)
+            
+        }
+        90% {
+            opacity:0;
+            transform: translateY(-30px)
+            
+        }
+        100% {
+            opacity:1;
+            transform: translateY(0px)
+        }
+    }
+    @-webkit-keyframes btnfadein { /* sur Safari et Chrome */
+        from {
+            opacity:0;
+            transform: translateY(-30px)
+            
+        }
+        to {
+            opacity:1;
+            transform: translateY(0px)
+        }
+    }
+    @-o-keyframes btnfadein { /* sur Opera */
+        from {
+            opacity:0;
+            transform: translateY(-30px)
+            
+        }
+        to {
+            opacity:1;
+            transform: translateY(0px)
+        }
+    }
