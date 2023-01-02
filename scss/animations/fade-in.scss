@@ -1,4 +1,5 @@
 
+  @media screen and (min-width:768px){
     .vignets {
         animation: fadein 0.5s ease-in-out;
         -moz-animation: fadein 0.5s; /* Firefox */
@@ -76,7 +77,10 @@
         }
     }
 
+   }
+  
 
+   @media screen and (max-width:768px){
     .menu_btn{
         animation: btnfadein 1.5s ease-in;
         -moz-animation: btnfadein 1.5s; /* Firefox */
@@ -157,3 +161,4 @@
             transform: translateY(0px)
         }
     }
+   }
