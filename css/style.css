@@ -320,12 +320,12 @@ main.main-content .menu .content .btn_cmd {
     transform: rotate(360deg);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .vignets {
-    animation: fadein 0.5s ease-in-out;
-    -moz-animation: fadein 0.5s; /* Firefox */
-    -webkit-animation: fadein 0.5s; /* Safari et Chrome */
-    -o-animation: fadein 0.5s; /* Opera */
+    animation: fadein 1s ease-in-out;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari et Chrome */
+    -o-animation: fadein 1s; /* Opera */
   }
   .m-d1 {
     -webkit-animation-delay: 0ms;
@@ -388,9 +388,9 @@ main.main-content .menu .content .btn_cmd {
     }
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   .menu_btn {
-    animation: btnfadein 1.5s ease-in;
+    animation: btnfadein 1.5s ease;
     -moz-animation: btnfadein 1.5s; /* Firefox */
     -webkit-animation: btnfadein 1.5s; /* Safari et Chrome */
     -o-animation: btnfadein 1.5s; /* Opera */
