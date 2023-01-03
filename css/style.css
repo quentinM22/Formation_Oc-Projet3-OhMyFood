@@ -288,15 +288,6 @@ main.main-content .menu .content .btn_cmd {
   animation-fill-mode: both;
 }
 .loader .lds-dual-ring {
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-  align-items: center;
-}
-.loader .lds-dual-ring .title {
-  color: rgb(255, 121, 217);
-}
-.loader .lds-dual-ring {
   content: " ";
   display: flex;
   justify-content: center;

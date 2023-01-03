@@ -13,17 +13,6 @@
     animation-fill-mode: none;
     animation-fill-mode: both;
 
-
-    .lds-dual-ring {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        .title{
-            color: $secondary;
-        }
-    }
-
     .lds-dual-ring {
         content: " ";
         display: flex;
