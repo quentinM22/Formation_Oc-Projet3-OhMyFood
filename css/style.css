@@ -631,25 +631,43 @@ main.main-content .menu .content .btn_cmd {
   transition: 1.5s;
 }
 
-.icon-container {
+.card_heart {
+  cursor: pointer;
+  margin-left: auto;
+  font-size: 1.5rem;
+  display: flex;
+  margin-right: 1rem;
   font-size: larger;
 }
-.icon-container_heart-regular {
-  background: white;
-  position: absolute;
-  transition: opacity 1000ms ease-in-out;
+.card_heart:hover {
+  transform: scale(1.03);
+  transition: 200ms ease-in-out;
 }
-.icon-container_heart-regular:hover {
-  opacity: 0;
-  cursor: pointer;
+.card_heart input[type=checkbox], .card_heart .check {
+  display: none;
 }
-.icon-container_heart-solid {
-  color: transparent;
-  background: linear-gradient(#ff79da, #9356dc);
-  -webkit-background-clip: text;
+.card_heart input[type=checkbox]:checked ~ .check {
+  display: inline-block;
+  animation: heart 1.5s;
+  color: rgba(255, 255, 255, 0);
+}
+.card_heart input[type=checkbox]:checked ~ .uncheck {
+  display: none;
+}
+.card_heart .fas {
+  background: linear-gradient(to bottom, rgb(147, 86, 220), rgb(255, 121, 217));
   background-clip: text;
+  -webkit-background-clip: text;
 }
 
+@keyframes heart {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .card_func {
   margin-top: 2rem;
   display: flex;
@@ -663,7 +681,7 @@ main.main-content .menu .content .btn_cmd {
 }
 .card_func:hover {
   cursor: pointer;
-  background-color: rgba(255, 121, 217, 0.2);
+  background-color: rgba(147, 86, 220, 0.1);
 }
 .card_func:hover .card_func-content i {
   color: rgb(147, 86, 220);
